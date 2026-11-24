@@ -112,6 +112,7 @@
             <tr><td data-label="Information">Name, email address and Google account identifier</td><td data-label="Why">To create and identify your account</td></tr>
             <tr><td data-label="Information">Subscriptions: service, amount, currency, billing cycle, renewal date, status</td><td data-label="Why">To back them up and sync them across your devices</td></tr>
             <tr><td data-label="Information">Shared household data: name, members, shared expenses, splits, repayments</td><td data-label="Why">To show them to the members of that household</td></tr>
+            <tr><td data-label="Information">A push address for each phone you are signed in on (a token issued by Google)</td><td data-label="Why">To notify you about a shared household while the app is closed. It is removed when you sign out or delete your account.</td></tr>
             <tr><td data-label="Information">Usage events, such as a feature being opened (counts only, no names or amounts)</td><td data-label="Why">To learn which features are used and to fix problems</td></tr>
           </tbody>
         </table>
@@ -147,6 +148,7 @@
           <tbody>
             <tr><td data-label="Provider">Google Sign-In</td><td data-label="What it does">Signs you in with your Google account</td><td data-label="When">Only if you sign in</td></tr>
             <tr><td data-label="Provider">Supabase</td><td data-label="What it does">Stores the account data in section 02</td><td data-label="When">Only if you sign in</td></tr>
+            <tr><td data-label="Provider">Firebase Cloud Messaging (Google)</td><td data-label="What it does">Delivers notifications about a shared household to its other members. The text of a notification, such as a member's name, an expense's title and an amount, passes through Google to reach the phone.</td><td data-label="When">Only if you sign in</td></tr>
             <tr><td data-label="Provider">Google AdMob</td><td data-label="What it does">Shows and measures banner ads</td><td data-label="When">Always</td></tr>
             <tr><td data-label="Provider">Logo services</td><td data-label="What it does">Supply public logos for services such as Netflix. Requests contain the service's name or web address, never your data.</td><td data-label="When">When a logo is shown</td></tr>
           </tbody>
